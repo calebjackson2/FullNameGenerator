@@ -5,19 +5,19 @@ import java.util.Scanner;
 
 public class FullNameApplication {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner Scanner = new Scanner(System.in);
 
         System.out.print("First name: ");
-        String first = input.nextLine().trim();
+        String firstName = Scanner.nextLine().trim();
         System.out.print("Middle name: ");
-        String middle = input.nextLine().trim();
+        String middleName = Scanner.nextLine().trim();
         System.out.print("Last name: ");
-        String last = input.nextLine().trim();
+        String lastName = Scanner.nextLine().trim();
         System.out.print("Suffix: ");
-        String suffix = input.nextLine().trim();
-        String fullName = first
-                + (middle.isEmpty() ? "" : " " + middle)
-                + " " + last
+        String suffix = Scanner.nextLine().trim();
+        String fullName = firstName
+                + (middleName.isEmpty() ? "" : " " + middleName)
+                + " " + lastName
                 + (suffix.isEmpty() ? "" : ", " + suffix);
 
         System.out.println("Full name: " + fullName);
